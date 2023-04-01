@@ -1,0 +1,36 @@
+Arguments: 
+  /home/wxtiago/.asdf/installs/nodejs/18.12.1/bin/node /home/wxtiago/.asdf/installs/yarn/1.22.19/bin/yarn.js add @mui/material @emotion/react @emotion/styled @fontsources/roboto @mui/icons-material
+
+PATH: 
+  /home/wxtiago/.asdf/plugins/nodejs/shims:/home/wxtiago/.asdf/installs/nodejs/lts/bin:/home/wxtiago/.asdf/installs/yarn/1.22.19/bin:/home/wxtiago/.asdf/shims:/home/wxtiago/.asdf/bin:/home/wxtiago/.vscode-server/bin/6261075646f055b99068d3688932416f2346dd3b/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Users/tiago/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/tiago/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/Azure Data Studio/bin:/snap/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.12.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@fontsources%2froboto: Not found
+      at params.callback [as _callback] (/home/wxtiago/.asdf/installs/yarn/1.22.19/lib/cli.js:66145:18)
+      at self.callback (/home/wxtiago/.asdf/installs/yarn/1.22.19/lib/cli.js:140890:22)
+      at Request.emit (node:events:513:28)
+      at Request.<anonymous> (/home/wxtiago/.asdf/installs/yarn/1.22.19/lib/cli.js:141862:10)
+      at Request.emit (node:events:513:28)
+      at IncomingMessage.<anonymous> (/home/wxtiago/.asdf/installs/yarn/1.22.19/lib/cli.js:141784:12)
+      at Object.onceWrapper (node:events:627:28)
+      at IncomingMessage.emit (node:events:525:35)
+      at endReadableNT (node:internal/streams/readable:1359:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
