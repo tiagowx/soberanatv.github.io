@@ -1,5 +1,5 @@
 import { PeopleAltOutlined, LibraryBooksOutlined, ArticleOutlined, QuizOutlined } from "@mui/icons-material";
-import { AppBar, Box, Button, Typography } from "@mui/material"
+import { AppBar, Box, Typography } from "@mui/material"
 import { BrowserRouter, Link } from "react-router-dom";
 import { styles } from "./styles";
 
@@ -36,7 +36,7 @@ export const Header = () => {
     <BrowserRouter>
       <AppBar sx={styles}>
         <Link to="/" className="h1">
-          <Typography component="h1">
+          <Typography component="h1" variant="h3">
             <Box component="img" src="./assets/images/logo.svg" alt="Logo da Soberana" />
             Soberana
           </Typography>
