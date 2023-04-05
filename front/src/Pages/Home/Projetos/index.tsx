@@ -3,7 +3,7 @@ import { Box, Button, Tabs, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { styles } from "./styles";
 
-export const Creators = () => {
+export const Projetos = () => {
 
   const creators: ICreator[] = [
     {
@@ -59,7 +59,7 @@ export const Creators = () => {
 
   return (
     <Box component="section" sx={styles} >
-      <Typography component="h2" variant="h3">Criadores</Typography>
+      <Typography component="h2" variant="h3">Projetos</Typography>
       <Tabs
         className="carrossel"
         variant="scrollable"

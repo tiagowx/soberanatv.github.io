@@ -42,15 +42,15 @@ export const Pages = () => {
   ]
 
   return (
-    <Layout>
-      <BrowserRouter>
+    <BrowserRouter>
+      <Layout>
         <Routes>
           {pages.length > 0 && pages.map(page => (
-            <Route path={page.path} element={page.element} />
+            <Route path={page.path}  element={page.element}/>
           ))}
         </Routes>
-      </BrowserRouter>
-    </Layout>
+      </Layout>
+    </BrowserRouter>
 
   );
 }
