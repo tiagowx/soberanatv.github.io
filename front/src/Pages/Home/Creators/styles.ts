@@ -15,7 +15,7 @@ export const styles: SxProps = {
   h2: {
     marginLeft: "10rem",
     fontFamily: "Molot",
-    width: "33%",
+    width: "25%",
     paddingY: "1rem",
     alignItems: "center",
     color: "white",
@@ -24,7 +24,7 @@ export const styles: SxProps = {
     borderTop: "4px solid #eb005c",
   },
   ".carrossel": {
-    marginX: "4rem",
+    marginX: "7rem",
     display: "flex",
     width: "auto",
     ".MuiTabs-scrollButtons": {

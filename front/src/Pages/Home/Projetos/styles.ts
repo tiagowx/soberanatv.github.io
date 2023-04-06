@@ -9,76 +9,59 @@ export const styles: SxProps = {
   minHeight: "100vh",
   gap: "1rem",
   button: {
-    backgroundColor: "#eb005c",
+    backgroundColor: "white",
+    width: "8rem",
+    margin: "1rem",
+    alignSelf: "flex-end",
+    color: "#eb005c",
     borderRadius: "1rem",
   },
   h2: {
+    textAlign: "center",
     marginLeft: "10rem",
     fontFamily: "Molot",
-    width: "33%",
+    width: "25%",
     paddingY: "1rem",
     alignItems: "center",
     color: "white",
     fontWeight: 400,
-    textAlign: "center",
     borderTop: "4px solid #eb005c",
   },
   ".carrossel": {
-    marginX: "4rem",
     display: "flex",
-    width: "auto",
+    marginX: "7rem",
+    maxWidth: "100vw",
+    flexBasis: "100%",
+    height: "auto",
     ".MuiTabs-scrollButtons": {
       bgcolor: "#eb005c",
       color: "white",
       boxShadow: "0 0 2rem 2rem rgb(235,0,92, 0.5)",
     },
-    ".carrosel-card": {
+    ".carrossel-card": {
       display: "flex",
+      whiteSpace: "normal",
       flexDirection: "column",
+      width: "25%",
+      height: "auto",
       border: "1px solid #eb005c",
-      width: "auto",
-      height: "24rem",
       marginRight: "1rem",
       color: "white",
-      textAlign: "center",
-      h3: {
-        fontWeight: 500,
-      },
+      gap: "1rem",
       img: {
         flex: 1,
-        width: "auto",
-        height: "14rem",
       },
-      ".carrossel-card-socials": {
+      ".text-area":{
         display: "flex",
-        justifyContent: "space-between",
-        padding: "1rem",
+        flexDirection: "column",
+        paddingX: "1rem",
+        lineHeight: "1.1rem",
+        gap: "1.6rem"
       },
-    },
-  },
-  ".invite": {
-    display:"flex",
-    justifyContent: "space-around", 
-    alignItems: "center",
-    marginX: "10rem",
-    paddingY: "2rem",
-    color: "white",
-    img: {
-      width: "16rem",
-      height: "auto",
-      border: "4px solid #eb005c",
-      borderRadius: "8rem"
-    },
-    ".invite-text": {
-      display:"flex",
-      flexDirection: "column",
-      paddingX: "1rem",
-      gap: "1rem",
-      ".btn-email": {
-        display: "block",
-        width: "8rem",
+      ".btn-light": {
+        display: "inherit",
+        maxWidth: "14rem",
         alignItems: "center",
-        textDecoration: "none",
         textTransform: "initial",
         backgroundColor: "white",
         fontSize: "16px",
@@ -87,6 +70,5 @@ export const styles: SxProps = {
         gap: ".3rem",
       }
     },
-    
   }
 };
