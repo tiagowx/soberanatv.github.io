@@ -31,37 +31,50 @@ export const styles: SxProps = {
     display: "flex",
     marginX: "7rem",
     maxWidth: "100vw",
-    flexBasis: "100%",
+    flexWrap: "nowrap",
     height: "auto",
     ".MuiTabs-scrollButtons": {
       bgcolor: "#eb005c",
       color: "white",
       boxShadow: "0 0 2rem 2rem rgb(235,0,92, 0.5)",
+      gap: "1rem"
     },
     ".carrossel-card": {
       display: "flex",
+      justifyContent: "space-between",
+      width: "auto",
+      height: "auto",
+      minWidth: "25%",
       whiteSpace: "normal",
       flexDirection: "column",
-      width: "25%",
-      height: "auto",
       border: "1px solid #eb005c",
       marginRight: "1rem",
       color: "white",
-      gap: "1rem",
-      img: {
-        flex: 1,
+      gap: ".5rem",
+      ".img-flex": {
+        float: "center",
+        contain: "content",
+        height: "100%",
+        maxHeight: "16rem",
+        width: "auto",
+        content: "normal",
+        display: "table",
+        clear: "both"
       },
       ".text-area":{
         display: "flex",
         flexDirection: "column",
         paddingX: "1rem",
-        lineHeight: "1.1rem",
-        gap: "1.6rem"
-      },
+        gap: "1rem",
+        h3: {
+          lineHeight: "1.4rem",
+        }
+      },      
       ".btn-light": {
-        display: "inherit",
+        marginBottom: "1rem",
+        paddingX: "1rem",
         maxWidth: "14rem",
-        alignItems: "center",
+        alignSelf: "flex-end",
         textTransform: "initial",
         backgroundColor: "white",
         fontSize: "16px",

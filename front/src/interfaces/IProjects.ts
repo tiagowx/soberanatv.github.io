@@ -1,7 +1,11 @@
+import { LabelDisplayedRowsArgs } from "@mui/base";
+
 export interface IProject {
-  name: string;
-  description: string;
+  title: string;
   image: string;
-  type: string;
   tags: string;
+  link: {
+    label: string;
+    url: string;
+  }
 } 

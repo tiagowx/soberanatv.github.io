@@ -6,46 +6,58 @@ export const Projetos = () => {
 
   const projects: IProject[] = [
     {
-      name: "Comunismo: Princípios básicos e guia de leitura",
-      description: "Comunismo: Princípios básicos e guia de leitura",
-      image: "./assets/images/principios-comunismo.jpg",
-      type: "vídeo",
-      tags: "#video #youtube",
+      "title": "Comunismo: princípios básicos e guia de leitura",
+      "image": "./assets/images/principios-comunismo.jpg",
+      "tags": "#tags #tags #tags",
+      "link": {
+        "label": "Acessar vídeo",
+        "url": "#"
+      }
     },
     {
-      name: "Comunismo: Princípios básicos e guia de leitura",
-      description: "Comunismo: Princípios básicos e guia de leitura",
-      image: "./assets/images/principios-comunismo.jpg",
-      type: "vídeo",
-      tags: "#video #youtube",
+      "title": "Audioteca crítica",
+      "image": "./assets/images/audioteca-critica.jpg",
+      "tags": "#tags #tags #tags",
+      "link": {
+        "label": "Acessar audiobooks",
+        "url": "#"
+      }
     },
     {
-      name: "Comunismo: Princípios básicos e guia de leitura",
-      description: "Comunismo: Princípios básicos e guia de leitura",
-      image: "./assets/images/principios-comunismo.jpg",
-      type: "vídeo",
-      tags: "#video #youtube",
+      "title": "Curso de Formação de Criadores de Conteúdo Nadejda Krúpskaia",
+      "image": "./assets/images/curso-nadejda-krupskaia.jpg",
+      "tags": "#tags #tags #tags",
+      "link": {
+        "label": "Acessar curso",
+        "url": "#"
+      }
     },
     {
-      name: "Comunismo: Princípios básicos e guia de leitura",
-      description: "Comunismo: Princípios básicos e guia de leitura",
-      image: "./assets/images/principios-comunismo.jpg",
-      type: "vídeo",
-      tags: "#video #youtube",
+      "title": "Comunismo: princípios básicos e guia de leitura",
+      "image": "./assets/images/principios-comunismo.jpg",
+      "tags": "#tags #tags #tags",
+      "link": {
+        "label": "Acessar vídeo",
+        "url": "#"
+      }
     },
     {
-      name: "Comunismo: Princípios básicos e guia de leitura",
-      description: "Comunismo: Princípios básicos e guia de leitura",
-      image: "./assets/images/principios-comunismo.jpg",
-      type: "vídeo",
-      tags: "#video #youtube",
+      "title": "Audioteca crítica",
+      "image": "./assets/images/audioteca-critica.jpg",
+      "tags": "#tags #tags #tags",
+      "link": {
+        "label": "Acessar audiobooks",
+        "url": "#"
+      }
     },
     {
-      name: "Comunismo: Princípios básicos e guia de leitura",
-      description: "Comunismo: Princípios básicos e guia de leitura",
-      image: "./assets/images/principios-comunismo.jpg",
-      type: "vídeo",
-      tags: "#video #youtube",
+      "title": "Curso de Formação de Criadores de Conteúdo Nadejda Krúpskaia",
+      "image": "./assets/images/curso-nadejda-krupskaia.jpg",
+      "tags": "#tags #tags #tags",
+      "link": {
+        "label": "Acessar curso",
+        "url": "#"
+      }
     }
   ];
 
@@ -58,12 +70,12 @@ export const Projetos = () => {
       >
         {projects.length > 0 && projects.map(project => (
           <Box className="carrossel-card">
-            <Box component="img" src={project.image} />
+            <Box className="img-flex" component="img" src={project.image} alt={project.title} />
             <Box className="text-area">
-              <Typography component="h3" variant="h6">{project.name}</Typography>
+              <Typography component="h3" variant="body2">{project.title}</Typography>
               <Typography component="span" variant="caption">{project.tags}</Typography>
+              <Button href={project.link.url} className="btn-light" size="small">{project.link.label}</Button>
             </Box>
-            <Button className="btn-light">Acessar {project.type}</Button>
           </Box>
         ))}
       </Tabs>
