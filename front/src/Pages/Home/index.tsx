@@ -1,6 +1,7 @@
 import { Box } from "@mui/material";
 import { Creators } from "./Creators";
-import { Projetos } from "./Projetos";
+import { Manifest } from "./Manifest";
+import { Projects } from "./Projects";
 import { RedLine } from "./RedLine";
 import { styles } from "./styles";
 
@@ -9,7 +10,8 @@ export const Home = () => {
     <Box component="main" sx={styles}>
       <RedLine />
       <Creators />
-      <Projetos />
+      <Projects />
+      <Manifest />
     </Box> 
   );
 };

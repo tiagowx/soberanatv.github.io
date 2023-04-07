@@ -2,7 +2,7 @@ import { IProject } from "@/interfaces/IProjects";
 import { Box, Button, Tabs, Typography } from "@mui/material";
 import { styles } from "./styles";
 
-export const Projetos = () => {
+export const Projects = () => {
 
   const projects: IProject[] = [
     {
