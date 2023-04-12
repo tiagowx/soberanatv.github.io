@@ -1,7 +1,7 @@
 import { PeopleAltOutlined, LibraryBooksOutlined, ArticleOutlined, QuizOutlined, EmailOutlined } from "@mui/icons-material";
 import { AppBar, Box, Typography } from "@mui/material"
-import { Link } from "react-router-dom";
 import { styles } from "./styles";
+import Link from "next/link";
 
 export const Header = () => {
   const navItens = [
@@ -35,7 +35,7 @@ export const Header = () => {
 
   return (
     <AppBar sx={styles}>
-      <Link to="/" className="h1">
+      <Link href="/" className="h1">
         <Typography component="h1" variant="h3">
           <Box component="img" src="./assets/images/logo.svg" alt="Logo da Soberana" />
           Soberana
@@ -43,7 +43,7 @@ export const Header = () => {
       </Link>
       <Box component="nav">
         {navItens.length > 0 && navItens.map(item => (
-          <Link to={item.url}>
+          <Link key={`${item.name}-link`} href={item.url}>
             {item.icon}{item.name}
           </Link>
         ))}
