@@ -62,7 +62,7 @@ export const Projects = () => {
   ];
 
   return (
-    <Box component="section" sx={styles} >
+    <Box id="projetos" component="section" sx={styles} >
       <Typography component="h2" variant="h3">Projetos</Typography>
       <Box className="carrossel">
         {projects.length > 0 && projects.map((project, index) => (

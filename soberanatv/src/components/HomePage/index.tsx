@@ -4,6 +4,8 @@ import { Manifest } from "./Manifest";
 import { Projects } from "./Projects";
 import { RedLine } from "./RedLine";
 import { styles } from "./styles";
+import { FAQ } from "./FAQ";
+import { Contact } from "./Contact";
 
 export const HomePage = () => {
   return(
@@ -12,6 +14,8 @@ export const HomePage = () => {
       <Creators />
       <Projects />
       <Manifest />
+      <FAQ />
+      <Contact />
     </Box> 
   );
 };

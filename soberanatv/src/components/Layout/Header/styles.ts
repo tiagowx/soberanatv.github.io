@@ -8,7 +8,7 @@ export const styles: SxProps = {
   color: "white",
   alignItems: "center",
   paddingX: "10em",
-  paddingY: "1rem",
+  paddingY: ".5rem",
   justifyContent: "space-around",
   backgroundColor: "rgba(0,0,0,0.5)",
   ".h1": {
@@ -22,11 +22,11 @@ export const styles: SxProps = {
       flex: 1,
       alignItems: "center",
       fontFamily: "Molot, sans-serif",
-      fontSize: "42px",
+      fontSize: "32px",
       gap: ".3em",
       textAlign: "center",
       img: {
-        maxHeight: "64px",
+        maxHeight: "48px",
       },
     },
   },

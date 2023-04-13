@@ -18,25 +18,32 @@ export const styles: SxProps = {
     fontWeight: 400,
     borderTop: "4px solid #eb005c",
   },
-  article: {
+  ".content": {
     display: "flex",
     flexDirection: "column",
     marginX: "10rem",
-    paddingY: "1rem",
-    paddingX: "5rem",
-    border: "4px solid #eb005c",
-    outline: ".8rem solid black",
-    boxShadow: "-1rem -1rem 0 0 rgb(235,0,92, 1)",
-   
-  },
-  ".btn-light": {
-    marginBottom: "1rem",
-    paddingX: "1rem",
-    maxWidth: "8rem",
-    backgroundColor: "white",
-    fontSize: "16px",
-    color: "#EB005C",
-    borderRadius: "1rem",
-    gap: ".3rem",
-  },
+    paddingX: "10rem",
+    gap: "1rem",
+    ".accordion": {
+      backgroundColor: "black",
+      color: "white",
+      ".accordion-summary": {
+        color: "text.light",
+        border: "1px solid white",
+        h6: {
+          fontWeight: "700",
+        },
+        ".MuiSvgIcon-root": {
+          fill: "white"
+        }
+      },
+      ".accordion-details": {
+        fontWeight: "700",
+        border: "1px solid white"
+      },
+    },
+
+  }
 };
+
+

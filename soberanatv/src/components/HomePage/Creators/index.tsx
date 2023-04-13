@@ -57,7 +57,7 @@ export const Creators = () => {
   ];
 
   return (
-    <Box component="section" sx={styles} >
+    <Box id="criadores" component="section" sx={styles} >
       <Typography component="h2" variant="h3">Criadores</Typography>
       <Box className="carrossel">
         {creators.length > 0 && creators.map((creator, index) => (

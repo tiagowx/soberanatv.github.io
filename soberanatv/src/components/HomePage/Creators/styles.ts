@@ -5,7 +5,7 @@ export const styles: SxProps = {
   flexDirection: "column",
   width: "auto",
   height: "100%",
-  paddingTop: "4rem",
+  paddingTop: "5rem",
   minHeight: "100vh",
   gap: "1rem",
   button: {

@@ -14,4 +14,12 @@ export const themeDefault = createTheme({
         `,
     },
   },
+  palette: {
+    primary: {
+      light: "white",
+      main: "f2f2f2",
+      dark: "black",
+      contrastText: "white",
+    }
+  }
 });

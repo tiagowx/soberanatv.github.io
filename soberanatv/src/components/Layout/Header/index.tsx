@@ -7,27 +7,27 @@ export const Header = () => {
   const navItens = [
     {
       "name": "Criadores",
-      "url": "/criadores",
+      "url": "#criadores",
       "icon": <PeopleAltOutlined />
     },
     {
       "name": "Projetos",
-      "url": "/projetos",
+      "url": "#projetos",
       "icon": <LibraryBooksOutlined />
     },
     {
       "name": "Manifesto",
-      "url": "/manifesto",
+      "url": "#manifesto",
       "icon": <ArticleOutlined />
     },
     {
       "name": "FAQ",
-      "url": "/faq",
+      "url": "#faq",
       "icon": <QuizOutlined />
     },
     {
       "name": "Contato",
-      "url": "/contato",
+      "url": "#contato",
       "icon": <EmailOutlined />
     }
   ];
@@ -35,7 +35,7 @@ export const Header = () => {
 
   return (
     <AppBar sx={styles}>
-      <Link href="/" className="h1">
+      <Link href="#" className="h1">
         <Typography component="h1" variant="h3">
           <Box component="img" src="./assets/images/logo.svg" alt="Logo da Soberana" />
           Soberana

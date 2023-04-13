@@ -23,7 +23,7 @@ Somos criadores de conteúdo com trabalhos variados sob a perspectiva de dissemi
   const handleExpand = () => setIsExpanded(!isExpanded);
 
   return (
-    <Box component="section" sx={styles} >
+    <Box id="manifesto" component="section" sx={styles} >
       <Typography component="h2" variant="h3">Manifesto</Typography>
       <Box component="article">
         <ReactMarkdown className="text" >
